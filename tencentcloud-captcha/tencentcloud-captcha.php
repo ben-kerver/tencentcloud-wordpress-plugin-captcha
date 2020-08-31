@@ -73,3 +73,4 @@ add_action( 'wp_enqueue_scripts', array($TecentWordpressCaptchaActions, 'tencent
 
 //插件中心初始化
 add_action( 'init', array($TecentWordpressCaptchaActions, 'tencent_wordpress_captcha_init'));
+add_action( 'comment_form_before', array($TecentWordpressCaptchaActions, 'tencent_wordpress_captcha_loadMyScriptEnqueue'));
